@@ -1,8 +1,8 @@
 package inflearn_srping_mvc1.servlet.web.frontcontroller.v1;
 
 import inflearn_srping_mvc1.servlet.web.frontcontroller.v1.controller.MemberFromControllerV1;
-import inflearn_srping_mvc1.servlet.web.frontcontroller.v1.controller.MemberListController;
-import inflearn_srping_mvc1.servlet.web.frontcontroller.v1.controller.MemberSaveController;
+import inflearn_srping_mvc1.servlet.web.frontcontroller.v1.controller.MemberListControllerV1;
+import inflearn_srping_mvc1.servlet.web.frontcontroller.v1.controller.MemberSaveControllerV1;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -20,8 +20,8 @@ public class FrontControllerServletV1 extends HttpServlet {
 
     public FrontControllerServletV1() {
         controllerMap.put("/front-controller/v1/members/new-form", new MemberFromControllerV1());
-        controllerMap.put("/front-controller/v1/members/save", new MemberSaveController());
-        controllerMap.put("/front-controller/v1/members", new MemberListController());
+        controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
+        controllerMap.put("/front-controller/v1/members", new MemberListControllerV1());
     }
 
     @Override
