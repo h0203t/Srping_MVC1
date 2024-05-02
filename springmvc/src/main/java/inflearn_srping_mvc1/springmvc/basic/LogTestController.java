@@ -17,8 +17,8 @@ public class LogTestController {
         String name = "String";
 
         System.out.println("name = " + name);
-//        log.info(" info log=" + name);
 
+        log.info(" info log=" + name);
         log.trace("trace log={}", name);
         log.debug("debug log={}", name);
         log.info(" info log={}", name);
