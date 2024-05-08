@@ -24,7 +24,7 @@ public class ItemRepository {
     }
 
     public List<Item> findAll(){
-        return  new ArrayList<>(store.values());
+        return new ArrayList<>(store.values());
     }
 
     public void update(Long itemId, Item updateParam){
