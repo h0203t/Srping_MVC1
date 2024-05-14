@@ -113,7 +113,7 @@ public class BasicItemController {
     }
 
 
-    @PostMapping("/delete/{itemId}/edit")
+    @PostMapping("/delete/{itemId}")
     public String delete(@PathVariable Long itemId){
         itemRepository.delete(itemId);
         return "redirect:/basic/items";
